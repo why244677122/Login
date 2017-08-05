@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box {
+            width: 400px;
+            height: 300px;
+            text-align: center;
+        }
+        input{
+            border: 0;
+            width: 300px;
+            height: 50px;
+            margin: 15px auto;
+            font-size: 18px;
+            background-color: #F7F7F7;
+        }
+        input::-webkit-input-placeholder{
+            color: #BABABA;
+        }
+
+        #but {
+            border: 0;
+            background-color: #47B18C;
+            color: white;
+        }
+        p{
+            width: 100px;
+            height: 20px;
+            color: #47B18C;
+            margin-left: 250px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <input type="text" placeholder="请输入已验证手机/邮箱">
+    <input type="text" placeholder="请输入密码">
+    <p>忘记密码?</p>
+    <input type="button" value="登录" id="but">
+</div>
+</body>
+<script>
+    var oBut = document.getElementById('but');
+    oBut.onclick = function () {
+        location.href='http://localhost:3000/loginSuccess';
+    }
+</script>
+</html>
